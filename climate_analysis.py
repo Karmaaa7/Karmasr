@@ -9,7 +9,7 @@ with open(filename, 'r', encoding='utf-8') as f:
 # Get headers from the first line
 headers = lines[0].strip().split(',')
 
-# Parse each subsequent line
+# Parse each line
 for line in lines[1:]:
     values = line.strip().split(',')
     if len(values) != len(headers):
