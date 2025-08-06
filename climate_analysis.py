@@ -12,7 +12,6 @@ headers = lines[0].strip().split(',')
 # Parse each subsequent line
 for line in lines[1:]:
     values = line.strip().split(',')
-    # Skip lines that don't match header length (e.g., empty lines)
     if len(values) != len(headers):
         continue
     row = dict(zip(headers, values))
